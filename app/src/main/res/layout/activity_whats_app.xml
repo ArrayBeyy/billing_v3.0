@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".WhatsAppActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:padding="25dp"
+        android:text="Masukan no telp yang dituju" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:text="*pastikan no telp yang dituju sudah terdaftar" />
+
+    <EditText
+        android:text="62"
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan no yang dituju"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim ke WhatsApp"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_marginTop="12dp" />
+
+
+
+</LinearLayout>

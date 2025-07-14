@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Selamat datang di aplikasi ZAVAS!" />
+
+   <TextView
+    android:id="@+id/textViewVersion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:textSize="14sp"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:text="Versi aplikasi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="271dp"
+        app:srcCompat="@drawable/zavas" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Kode Voucher"
+            android:inputType="textPassword"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:padding="23dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:hint="Cek Voucher"
+        android:backgroundTint="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/btnScanQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Scan QR"
+        android:textColorHint="@color/design_default_color_on_secondary" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:background="@android:color/black" />
+    <Button
+        android:id="@+id/btnToggleRecording"
+        android:layout_width="match_parent"
+        android:padding="50px"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="WARNING!!"
+        android:layout_marginTop="12dp"/>
+
+
+</LinearLayout>
